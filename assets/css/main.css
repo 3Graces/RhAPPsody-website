@@ -124,7 +124,7 @@ section {
   min-height: 100vh;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("../img/background.JPG") center/cover no-repeat;
+    url("/RhAPPsody-website/assets/img/background.JPG") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,6 +132,7 @@ section {
   position: relative;
   padding: 120px 0 80px;
 }
+
 
 .home-content {
   max-width: 1200px;
