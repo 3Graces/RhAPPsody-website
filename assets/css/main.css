@@ -133,7 +133,6 @@ section {
   padding: 120px 0 80px;
 }
 
-
 .home-content {
   max-width: 1200px;
   padding: 0 20px;
@@ -332,6 +331,7 @@ section {
   color: var(--default-color);
 }
 
+
 /* Modal Styles */
 .modal-content {
   background: transparent;
@@ -505,10 +505,14 @@ section {
 }
 /* Chart Container Styles */
 .chart-container {
-  position: relative;
-  height: 400px;
-  margin: 30px 0;
+  display: flex;
+  justify-content: center;  
+  align-items: center;   
+  margin: 20px auto;
+  max-width: 700px;        
+  height: 400px;           
 }
+
 
 .summary {
   background-color: var(--surface-color);
@@ -779,6 +783,96 @@ section {
   
   .download-btn {
     justify-content: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Gamification Image Styles
+--------------------------------------------------------------*/
+.gamification-image-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.gamification-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gamification-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gamification-caption {
+  margin-top: 15px;
+  font-style: italic;
+  color: var(--default-color);
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .gamification-image-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gamification-image-container {
+    max-width: 95%;
+    padding: 10px;
+  }
+  
+  .gamification-caption {
+    font-size: 1rem;
+  }
+}
+/*--------------------------------------------------------------
+# Activities Image Styles
+--------------------------------------------------------------*/
+.activities-image-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.activities-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activities-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .activities-image-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities-image-container {
+    max-width: 95%;
+    padding: 10px;
   }
 }
 
